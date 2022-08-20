@@ -12,6 +12,7 @@ Cross-wavelet spectrum of the original signal and it’s denoised version. The d
 •	Test set – 2549 images
 
 #### Classes - 3 : (Positive, Negative and Neutral)
+
 Method - 1 : Dataset sample
 
 <img width="536" alt="image" src="https://user-images.githubusercontent.com/75621797/185759736-520a8e6d-d918-44b5-9f30-22460571e3e3.png">
@@ -25,6 +26,7 @@ Cross-wavelet spectrum of the positive signal and negative signals with neutral 
 #### Classes - 2 : (Positive with neutral and Negative with neutral)
 
 Method - 2 : Dataset sample
+
 <img width="514" alt="image" src="https://user-images.githubusercontent.com/75621797/185759757-6810fc94-9bf5-48db-ad61-c8e8224881e8.png">
 
 
