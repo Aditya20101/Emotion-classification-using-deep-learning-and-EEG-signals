@@ -3,7 +3,7 @@
 
 Cross-wavelet spectrum images are used as dataset for emotion classification using SEED-1 dataset of EEG signals.
 Matlab’s cross wavelet and wavelet coherence toolbox was used to generate cross-wavelet spectrum images.
-For classification of cross-wavelet spectrum images, VGG19 pretrained model was used along with additional Flatten, Dense, Dropout and Batch-Normalization layers. Hence, this is a Convolutional Neural Networks based project.
+For classification of cross-wavelet spectrum images, VGG19, VGG16 and RESNET50 pretrained models were used along with additional Flatten, Dense, Dropout and Batch-Normalization layers. Hence, this is a Convolutional Neural Networks based project. The study was done for two cases-(i) One additional dense layer; (ii) Two addtional dense layers on the pretrained models.
 
 ## Method - 1
 Cross-wavelet spectrum of the original signal and it’s denoised version. The denoising was performed using wavelet denoising in Matlab. For this purpose, wden function of Matlab was used.  A total of 12741 images were generated out of 13950 images. 
