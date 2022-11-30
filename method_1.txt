@@ -1,0 +1,218 @@
+% matlab code for dataset generation
+% Method - 1 : noisy and denoised Cross wavelet spectum
+
+%%% repeat this for s01 to s15   %%%
+
+clc;
+clear all;
+close all;
+load('s01.mat');
+
+fpath0='C:\Project Workspace\MLA Project\Dataset\Method 1\Labels2\0';
+fpath1='C:\Project Workspace\MLA Project\Dataset\Method 1\Labels2\1';
+fpath2='C:\Project Workspace\MLA Project\Dataset\Method 1\Labels2\2';
+
+
+
+%eeg1 - label 2
+for i=1:62
+   x=eeg1(i,:); 
+   xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('ad',num2str(i));
+   f = figure('visible','off');
+%    figure(i);
+   xwt(x,xdMODWT);
+   saveas(f, fullfile(fpath2, filename),'jpeg');
+end
+close all;
+clc;
+
+
+%eeg2 - label 1
+for i=1:62
+   x=eeg2(i,:); 
+   xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('bd',num2str(i));
+   f = figure('visible','off');
+   xwt(x,xdMODWT);
+   saveas(f, fullfile(fpath1, filename),'jpeg');
+end
+close all;
+clc;
+
+
+%eeg3 - label 0
+for i=1:62
+   x=eeg3(i,:); 
+   
+   
+   xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('cd',num2str(i));
+   f = figure('visible','off');
+   xwt(x,xdMODWT);
+   saveas(f, fullfile(fpath0, filename),'jpeg');
+end
+close all;
+clc;
+
+%eeg4 - label 0    // eeg4 - 38  s02
+for i=1:62
+   x=eeg4(i,:); 
+   xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('dd',num2str(i));
+   f = figure('visible','off');
+   xwt(x,xdMODWT);
+   saveas(f, fullfile(fpath0, filename),'jpeg');
+end
+close all;
+clc;
+
+
+
+% eeg5 - label 1
+for i=1:62
+   x=eeg5(i,:); 
+   xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('ed',num2str(i));
+   f = figure('visible','off');
+   xwt(x,xdMODWT);
+   saveas(f, fullfile(fpath1, filename),'jpeg');
+end
+close all;
+clc;
+
+
+
+%eeg6 - label 2
+for i=1:62
+   x=eeg6(i,:); 
+   xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('fd',num2str(i));
+   f = figure('visible','off');
+   xwt(x,xdMODWT);
+   saveas(f, fullfile(fpath2, filename),'jpeg');
+end
+close all;
+clc;
+ 
+%eeg7 - label 0
+for i=1:62
+   x=eeg7(i,:); 
+   xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('gd',num2str(i));
+   f = figure('visible','off');
+   xwt(x,xdMODWT);
+   saveas(f, fullfile(fpath0, filename),'jpeg');
+end
+close all;
+clc;
+
+
+%eeg8 - label 1
+for i=1:62
+   x=eeg8(i,:); 
+   xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('hd',num2str(i));
+   f = figure('visible','off');
+   xwt(x,xdMODWT);
+   saveas(f, fullfile(fpath1, filename),'jpeg');
+end
+close all;
+clc;
+
+
+%eeg9 - label 2
+for i=1:62
+   x=eeg9(i,:); 
+   xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('id',num2str(i));
+   f = figure('visible','off');
+   xwt(x,xdMODWT);
+   saveas(f, fullfile(fpath2, filename),'jpeg');
+end
+close all;
+clc;
+
+
+%eeg10 - label 2%
+for i=1:62
+   x=eeg10(i,:); 
+   xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('jd',num2str(i));
+   f = figure('visible','off');
+   xwt(x,xdMODWT);
+   saveas(f, fullfile(fpath2, filename),'jpeg');
+end
+close all;
+clc;
+
+%eeg11 - label 1
+for i=1:62
+   x=eeg11(i,:); 
+   xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('kd',num2str(i));
+   f = figure('visible','off');
+   xwt(x,xdMODWT);
+   saveas(f, fullfile(fpath1, filename),'jpeg');
+end
+close all;
+clc;
+
+
+ 
+%eeg12 - label 0
+for i=1:62
+   x=eeg12(i,:); 
+   xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('ld',num2str(i));
+   f = figure('visible','off');
+   xwt(x,xdMODWT);
+   saveas(f, fullfile(fpath0, filename),'jpeg');
+end
+close all;
+clc;
+
+
+%eeg13 - label 1
+for i=1:62
+   x=eeg13(i,:); 
+   xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('md',num2str(i));
+   f = figure('visible','off');
+   xwt(x,xdMODWT);
+   saveas(f, fullfile(fpath1, filename),'jpeg');
+end
+close all;
+clc;
+
+
+
+%eeg14 - label 2
+for i=1:62
+   x=eeg14(i,:); 
+   xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('nd',num2str(i));
+   f = figure('visible','off');
+   xwt(x,xdMODWT);
+   saveas(f, fullfile(fpath2, filename),'jpeg');
+end
+close all;
+clc;
+
+
+
+%eeg15 - label 0
+for i=1:62
+   x=eeg15(i,:); 
+   xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('od',num2str(i));
+   f = figure('visible','off');
+   xwt(x,xdMODWT);
+   saveas(f, fullfile(fpath0, filename),'jpeg');
+end
+
+
+close all;
+clear all;
+clc;
+

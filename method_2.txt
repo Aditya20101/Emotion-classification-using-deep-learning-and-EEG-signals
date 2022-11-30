@@ -1,0 +1,177 @@
+
+% matlab code to generate cross-wavelet spectrum images using method - 2
+clc;
+clear all;
+close all;
+
+%original labels - 
+%0- negative
+% 1 - neutral 
+% 2 - positive
+
+
+
+%%%%% New Labels
+
+% label - 0 : positive with neutral
+% label 1 - negative with neutral
+
+fpath0='D:\IIIT-NR\Semester 4\MLA Project\Dataset\Method_3\0';
+fpath1='D:\IIIT-NR\Semester 4\MLA Project\Dataset\Method_3\1';
+
+
+load('s01.mat');
+
+
+ne = eeg2(1,:);  % random neutral signal for XWT
+
+% eeg1 - label 2
+clc;
+close all;
+
+for i=1:62
+   x=eeg1(i,:); 
+   
+
+   filename = strcat('aa',num2str(i));   % for s02 - ab   ;  s03 - ac
+   f = figure('visible','off');
+%    figure(i);
+   xwt(x,ne);
+   saveas(f, fullfile(fpath0, filename),'jpeg');
+end
+% done
+
+
+%eeg3 - label 0
+clc;
+close all;
+for i=1:62
+   x=eeg3(i,:); 
+%    xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('ba',num2str(i));
+   f = figure('visible','off');
+   xwt(x,ne);
+   saveas(f, fullfile(fpath1, filename),'jpeg');
+end
+% done
+ 
+%eeg4 - label 0
+clc;
+close all;
+for i=1:62
+   x=eeg4(i,:); 
+%    xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('ca',num2str(i));
+   f = figure('visible','off');
+   xwt(x,ne);
+   saveas(f, fullfile(fpath1, filename),'jpeg');
+   
+end
+% done
+
+
+
+%eeg6 - label 2
+clc;
+close all;
+for i=1:62
+   x=eeg6(i,:); 
+%    xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('da',num2str(i));
+   f = figure('visible','off');
+   xwt(x,ne);
+   saveas(f, fullfile(fpath0, filename),'jpeg');
+end
+% done
+ 
+%eeg7 - label 0
+clc;
+close all;
+for i=1:62
+   x=eeg7(i,:); 
+%    xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('ea',num2str(i));
+   f = figure('visible','off');
+   xwt(x,ne);
+   saveas(f, fullfile(fpath1, filename),'jpeg');
+end
+% done
+
+
+
+
+
+%eeg9 - label 2
+clc;
+close all;
+for i=1:62
+   x=eeg9(i,:); 
+%    xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('fa',num2str(i));
+   f = figure('visible','off');
+   xwt(x,ne);
+   saveas(f, fullfile(fpath0, filename),'jpeg');
+end
+% done 
+
+%eeg10 - label 2%
+clc;
+close all;
+for i=1:62
+   x=eeg10(i,:); 
+%    xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('ga',num2str(i));
+   f = figure('visible','off');
+   xwt(x,ne);
+   saveas(f, fullfile(fpath0, filename),'jpeg');
+end
+
+
+
+
+ 
+%eeg12 - label 0
+clc;
+close all;
+for i=1:62
+   x=eeg12(i,:); 
+%    xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('ha',num2str(i));
+   f = figure('visible','off');
+   xwt(x,ne);
+   saveas(f, fullfile(fpath1, filename),'jpeg');
+ end
+
+
+
+
+
+%eeg14 - label 2
+clc;
+close all;
+for i=1:62
+   x=eeg14(i,:); 
+%    xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('ia',num2str(i));
+   f = figure('visible','off');
+   xwt(x,ne);
+   saveas(f, fullfile(fpath0, filename),'jpeg');
+end
+
+
+% %eeg15 - label 0
+clc;
+close all;
+for i=1:62
+   x=eeg15(i,:); 
+%    xdMODWT = wden(x,'modwtsqtwolog','s','mln',4,'sym4');
+   filename = strcat('ja',num2str(i));
+   f = figure('visible','off');
+   xwt(x,ne);
+   saveas(f, fullfile(fpath1, filename),'jpeg');
+end
+clc;
+close all;
+
+
+
