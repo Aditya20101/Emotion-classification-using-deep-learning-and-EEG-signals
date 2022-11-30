@@ -17,6 +17,11 @@ Method - 1 : Dataset sample
 
 <img width="536" alt="image" src="https://user-images.githubusercontent.com/75621797/185759736-520a8e6d-d918-44b5-9f30-22460571e3e3.png">
 
+ ### Method -1 results
+ 
+ <img width="450" alt="image" src="https://user-images.githubusercontent.com/75621797/204766254-13675229-cf6f-4b6f-97d9-d86adda93110.png">
+
+
 
 
 ## Method - 2
@@ -28,6 +33,10 @@ Cross-wavelet spectrum of the positive signal and negative signals with neutral 
 Method - 2 : Dataset sample
 
 <img width="514" alt="image" src="https://user-images.githubusercontent.com/75621797/185759757-6810fc94-9bf5-48db-ad61-c8e8224881e8.png">
+
+ ### Method -2 results
+
+<img width="450" alt="image" src="https://user-images.githubusercontent.com/75621797/204766376-c73fd242-589d-4422-8927-399760908ef5.png">
 
 
  The EEG signal of subject-1, Video-2 (Neutral signal- label-0), channel-1 was taken as the reference for generating positive with neutral and negative with neutral cross-wavelet spectrum images. 
