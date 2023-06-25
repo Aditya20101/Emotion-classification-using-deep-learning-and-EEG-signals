@@ -46,4 +46,3 @@ Method - 2 : Dataset sample
 SEED Dataset link - https://bcmi.sjtu.edu.cn/home/seed/
 
 
-Collaborators - Aditya Saxena, Vedanshu Dewangan, Rahul Thakur, Anand Kumar Sahu
